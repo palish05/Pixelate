@@ -26,7 +26,7 @@ const reducer = (state = initialState, action) => {
     case ACTION_CONSTANTS.ADD_NEW_ROW:
       // const colSize = state.grid[0].length;
       const newArray = state.grid.slice();
-      newArray.push(new Array(20).fill(""));
+      newArray.push(new Array(20).fill(newObj()));
       return { ...state, grid: newArray };
 
     case ACTION_CONSTANTS.SELECTED_COLOR_CHANGE:

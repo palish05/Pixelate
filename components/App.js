@@ -24,7 +24,7 @@ export default class App extends React.Component {
   render() {
     const { grid } = this.state;
     return (
-      <div id="pixelate">
+      <div id="pixelate" className="box">
         <h1>Pixelate</h1>
         <div>
           <button id="add-row" onClick={this.onClick_addNewRow}>
